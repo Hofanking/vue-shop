@@ -8,6 +8,7 @@ import Msite from '../pages/Msite/Msite'
 import Search from '../pages/Search/Search'
 import Order from '../pages/Order/Order'
 import Profile from '../pages/Profile/Profile'
+import Login from '../pages/Login/Login'
 
 // 声明使用插件
 Vue.use(VueRouter)
@@ -18,16 +19,32 @@ export default new VueRouter({
   routes: [
     {
       path: '/msite',
-      component: Msite
+      component: Msite,
+      // 用于判断当前路由组件中是否显示底部四个菜单切换项
+      meta: {
+        showFooter: true
+      }
     }, {
       path: '/search',
-      component: Search
+      component: Search,
+      meta: {
+        showFooter: true
+      }
     }, {
       path: '/order',
-      component: Order
+      component: Order,
+      meta: {
+        showFooter: true
+      }
     }, {
       path: '/profile',
-      component: Profile
+      component: Profile,
+      meta: {
+        showFooter: true
+      }
+    }, {
+      path: '/login',
+      component: Login
     }, {
       path: '/',
       redirect: '/msite'
