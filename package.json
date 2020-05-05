@@ -8,12 +8,15 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "json": "json-server --watch db.json"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "swiper": "^5.3.8",
     "vue": "^2.5.2",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.1.6",
+    "vuex": "^3.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -28,13 +28,13 @@
 </template>
 
 <script>
-  export default {
-    methods: {
-      goTo(path) {
-        this.$router.push(path);
-      }
+export default {
+  methods: {
+    goTo (path) {
+      this.$router.push(path)
     }
   }
+}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
